@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESAKKIMUTHU R | Full-stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">ESAKKIMUTHU R</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+        <div class="container home-content">
+            <div class="home-text">
+                <h1>ESAKKIMUTHU R</h1>
+                <h2>Full-stack Developer</h2>
+                <p>Passionate about building scalable web applications and delivering high-quality solutions. Experienced in both frontend and backend technologies.</p>
+                <a href="#contact" class="btn-primary">Contact Me</a>
+            </div>
+            <div class="home-photo">
+                <img src="https://via.placeholder.com/200x200.png?text=Photo" alt="Professional Photo" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>B.Tech in Computer Science, XYZ University, 2022</li>
+                    </ul>
+                </div>
+                <div class="about-skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>JavaScript, React, Node.js, Express</li>
+                        <li>HTML5, CSS3, SASS</li>
+                        <li>MongoDB, MySQL</li>
+                        <li>Git, Docker, REST APIs</li>
+                    </ul>
+                </div>
+                <div class="about-summary">
+                    <h3>Career Summary</h3>
+                    <p>Full-stack developer with 3+ years of experience in designing, developing, and deploying web applications. Adept at collaborating in agile teams and delivering robust solutions for clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350x200.png?text=Project+1" alt="Project 1">
+                    <h3>Portfolio Website</h3>
+                    <p>Personal portfolio built with React and deployed on Vercel.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/esakkimuthu/portfolio" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Demo</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350x200.png?text=Project+2" alt="Project 2">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-featured MERN stack e-commerce application with payment integration.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/esakkimuthu/ecommerce" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Demo</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/350x200.png?text=Project+3" alt="Project 3">
+                    <h3>Task Manager API</h3>
+                    <p>RESTful API for managing tasks, built with Node.js and Express.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/esakkimuthu/task-manager-api" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+        <div class="container">
+            <h2>Resume</h2>
+            <a href="resume.pdf" class="btn-primary" download>Download PDF Resume</a>
+            <h3>Technical Skills</h3>
+            <ul class="skills-list">
+                <li>JavaScript (ES6+)</li>
+                <li>React, Redux</li>
+                <li>Node.js, Express</li>
+                <li>MongoDB, MySQL</li>
+                <li>HTML5, CSS3, SASS</li>
+                <li>Git, Docker</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:esakkimuthu.r@gmail.com">esakkimuthu.r@gmail.com</a></p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/esakkimuthu" target="_blank" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" height="32">
+                    </a>
+                    <a href="https://github.com/esakkimuthu" target="_blank" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" height="32">
+                    </a>
+                </div>
+            </div>
+            <form class="contact-form" action="mailto:esakkimuthu.r@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ESAKKIMUTHU R. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll JS & Animations -->
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 60,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
