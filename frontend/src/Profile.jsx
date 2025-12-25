@@ -17,7 +17,7 @@ export default function Profile() {
     }, [userId, navigate]);
 
     const fetchProfile = () => {
-        axios.get('http://localhost:8081/profile/' + userId)
+        axios.get('https://taskflow-api-z1us.onrender.com/profile/' + userId)
             .then(res => {
                 setUser(res.data);
                 setBio(res.data.bio || '');
@@ -27,7 +27,7 @@ export default function Profile() {
     }
 
     const handleSave = () => {
-        axios.put('http://localhost:8081/update-profile', {
+        axios.put('https://taskflow-api-z1us.onrender.com/update-profile', {
             id: userId,
             bio: bio,
             profile_pic: image

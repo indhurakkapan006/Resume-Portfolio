@@ -19,7 +19,7 @@ export default function Dashboard() {
 
     // 2. Fetch Tasks from Backend
     const fetchTasks = () => {
-        axios.get('http://localhost:8081/tasks/' + userId)
+        axios.get('https://taskflow-api-z1us.onrender.com/tasks/' + userId)
             .then(res => {
                 if(Array.isArray(res.data)) setTasks(res.data);
             })
@@ -31,7 +31,7 @@ export default function Dashboard() {
         e.preventDefault();
         if(!newTask) return;
         
-        axios.post('http://localhost:8081/tasks', {
+        axios.post('https://taskflow-api-z1us.onrender.com/tasks', {
             user_id: userId,
             title: newTask,
             description: '' // Optional description
@@ -46,7 +46,7 @@ export default function Dashboard() {
 
     // 4. Delete Task
     const handleDelete = (id) => {
-        axios.delete('http://localhost:8081/tasks/' + id)
+        axios.delete('https://taskflow-api-z1us.onrender.com/tasks/' + id)
             .then(res => {
                 if(res.data.Status === "Success") fetchTasks();
             });
@@ -55,7 +55,7 @@ export default function Dashboard() {
     // 5. Toggle Complete (Visual update)
     const handleToggle = (id, currentStatus) => {
         const newStatus = currentStatus === 'completed' ? 'pending' : 'completed';
-        axios.put('http://localhost:8081/tasks/status/' + id, { status: newStatus })
+        axios.put('https://taskflow-api-z1us.onrender.com/tasks/status/' + id, { status: newStatus })
             .then(res => {
                 if(res.data.Status === "Success") fetchTasks();
             });

@@ -10,7 +10,7 @@ export function Register() {
     const handleRegister = (e) => {
         e.preventDefault();
         // Post to your LOCAL backend
-        axios.post('http://localhost:8081/register', values)
+        axios.post('https://taskflow-api-z1us.onrender.com/register', values)
             .then(res => {
                 if(res.data.Status === "Success") {
                     alert("Account Created! Please Login.");
@@ -52,7 +52,7 @@ export function Login() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8081/login', values)
+        axios.post('https://taskflow-api-z1us.onrender.com/login', values)
             .then(res => {
                 if(res.data.Status === "Success") {
                     // Save User ID to browser storage so we know who is logged in
