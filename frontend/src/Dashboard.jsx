@@ -8,15 +8,6 @@ export default function Dashboard() {
     const navigate = useNavigate();
     const userId = localStorage.getItem('userId');
 
-    // 1. Check if user is logged in
-    useEffect(() => {
-        if(!userId) {
-            navigate('/login');
-        } else {
-            fetchTasks();
-        }
-    }, [userId, navigate]);
-
     // 2. Fetch Tasks from Backend
     const fetchTasks = () => {
         axios.get('https://taskflow-api-z1us.onrender.com/tasks/' + userId)
@@ -25,6 +16,15 @@ export default function Dashboard() {
             })
             .catch(err => console.log(err));
     };
+
+    // 1. Check if user is logged in
+    useEffect(() => {
+        if(!userId) {
+            navigate('/login');
+        } else {
+            fetchTasks();
+        }
+    }, [userId, navigate]);
 
     // 3. Add a New Task
     const handleAdd = (e) => {

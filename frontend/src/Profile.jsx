@@ -11,11 +11,6 @@ export default function Profile() {
     const navigate = useNavigate();
     const userId = localStorage.getItem('userId');
 
-    useEffect(() => {
-        if(!userId) navigate('/login');
-        fetchProfile();
-    }, [userId, navigate]);
-
     const fetchProfile = () => {
         axios.get('https://taskflow-api-z1us.onrender.com/profile/' + userId)
             .then(res => {
@@ -25,6 +20,11 @@ export default function Profile() {
             })
             .catch(err => console.log(err));
     }
+
+    useEffect(() => {
+        if(!userId) navigate('/login');
+        fetchProfile();
+    }, [userId, navigate]);
 
     const handleSave = () => {
         axios.put('https://taskflow-api-z1us.onrender.com/update-profile', {
