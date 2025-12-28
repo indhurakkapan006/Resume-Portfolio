@@ -4,25 +4,25 @@ import { motion } from 'framer-motion'; // 1. Import motion
 const featuredProjects = [
   {
     title: "MERN Chat App",
-    desc: "A real-time chat application built with the MERN stack.",
+    desc: "Architected a bi-directional messaging platform allowing users to join rooms and chat instantly using Socket.io",
     tags: ["React.js", "Node.js", "Express", "MySQL"],
     links: { demo: "https://mern-chat-app-ten-omega.vercel.app", source: "https://github.com/indhurakkapan006/mern-chat-app.git" }
   },
   {
     title: "Fuel Delivery System",
-    desc: "Fuel delivery management system with user and admin flows.",
+    desc: "Developed a responsive client dashboard for viewing quote history and profile management.",
     tags: ["React.js", "Node.js", "Express", "MySQL"],
     links: { demo: "https://fuel-delivery-system.onrender.com", source: "https://github.com/indhurakkapan006/fuel-delivery-system.git" }
   },
   {
     title: "Ecommerce Project",
-    desc: "E-commerce application with product listings and cart functionality.",
+    desc: "Developed a RESTful API to handle CRUD operations for inventory management and order processing.",
     tags: ["React.js", "Redux", "Node.js", "MongoDB"],
     links: { demo: "https://shop-frontend-glmh.onrender.com", source: "https://github.com/indhurakkapan006/Ecommerce-project.git" }
   },
   {
     title: "TaskFlow",
-    desc: "Task management / productivity project.",
+    desc: "Created an interactive task manager supporting full task lifecycle (Add, Edit, Delete, Complete).",
     tags: ["React.js", "CSS3", "LocalStorage"],
     links: { demo: "https://task-flow-omega-bay.vercel.app", source: "https://github.com/indhurakkapan006/TaskFlow.git" }
   }

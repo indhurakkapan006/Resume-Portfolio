@@ -8,6 +8,12 @@ const certs = [
     college: "",
     icon: <Award size={18}/>
   }
+  ,{
+    title: "Participated in DEVSPARK'25 - 24hrs Hackathon (IEEE CS SYP)",
+    sub: "12 & 13 Sep 2025",
+    college: "KPRIET, Coimbatore, Tamil Nadu",
+    icon: <Mic size={18}/>
+  }
 ];
 
 export default function Certifications() {
