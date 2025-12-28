@@ -22,7 +22,7 @@ const skillCategories = [
 
 export default function DetailedSkills() {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
+    <section id="skills" className="py-20 px-6 max-w-6xl mx-auto">
       <h2 className="text-4xl font-bold text-center mb-16 underline decoration-accent underline-offset-8">Technical Skills</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {skillCategories.map((cat, i) => (

@@ -4,14 +4,16 @@ import DetailedSkills from './components/DetailedSkills';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import About from './components/About';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 function App() {
   return (
     <main className="min-h-screen bg-dark">
       <Navbar />
       
-      {/* Hero Section with Entry Animations */}
-      <header className="pt-48 pb-24 px-6 text-center">
+      {/* Hero / Home Section with Entry Animations */}
+      <header id="home" className="pt-48 pb-24 px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: -20 }} // Starts slightly higher and invisible
           animate={{ opacity: 1, y: 0 }} // Slides down and fades in immediately
@@ -49,7 +51,16 @@ function App() {
           >
             Full Stack Developer & ECE Undergraduate building innovative web solutions with React, Node.js, and SQL.
           </motion.p>
-          
+
+          <div className="mt-8 flex justify-center gap-4 items-center">
+            <a href="/resume.pdf" download className="bg-accent text-dark px-4 py-2 rounded-md font-semibold hover:opacity-90">Download Resume</a>
+            <div className="flex gap-3 text-gray-400">
+              <a href="https://github.com/indhurakkapan006" target="_blank" rel="noreferrer" className="hover:text-accent"> <Github /> </a>
+              <a href="https://www.linkedin.com/in/esakkimuthu-neweye/" target="_blank" rel="noreferrer" className="hover:text-accent"> <Linkedin /> </a>
+              <a href="mailto:indhurakkapan006@gmail.com" className="hover:text-accent"> <Mail /> </a>
+            </div>
+          </div>
+
           {/* Scroll Down Indicator Icon */}
           <motion.div 
             animate={{ y: [0, 10, 0] }} 
@@ -60,6 +71,9 @@ function App() {
           </motion.div>
         </motion.div>
       </header>
+
+      {/* About Me Section */}
+      <About />
 
       {/* These components now handle their own scroll animations internally */}
       <DetailedSkills />

@@ -3,29 +3,35 @@ import { motion } from 'framer-motion'; // 1. Import motion
 
 const featuredProjects = [
   {
-    title: "Fuel Buying Website",
-    desc: "A responsive fuel delivery platform allowing users to purchase fuel online and track orders efficiently.",
-    tags: ["React", "Node.js", "Database"],
-    links: { demo: "https://fuel-delivery-system.onrender.com", source: "https://github.com/indhurakkapan006/fuel-delivery-system" }
+    title: "MERN Chat App",
+    desc: "A real-time chat application built with the MERN stack.",
+    tags: ["MERN", "Socket.io"],
+    links: { demo: "https://github.com/indhurakkapan006/mern-chat-app.git", source: "https://github.com/indhurakkapan006/mern-chat-app.git" }
   },
   {
-    title: "E-Commerce Website",
-    desc: "Full-stack e-commerce solution with product listings, shopping cart, and secure user authentication.",
-    tags: ["Full Stack", "Auth", "Payment Flow"],
-    links: { demo: "https://e-comerce-website-t88s.onrender.com", source: "https://github.com/indhurakkapan006/E-Comerce-website.git" }
+    title: "Fuel Delivery System",
+    desc: "Fuel delivery management system with user and admin flows.",
+    tags: ["Full Stack", "Delivery"],
+    links: { demo: "https://github.com/indhurakkapan006/fuel-delivery-system.git", source: "https://github.com/indhurakkapan006/fuel-delivery-system.git" }
   },
   {
-    title: "To-Do List App",
-    desc: "Responsive task management application featuring add, delete, and task organization capabilities.",
-    tags: ["React", "State Management", "Responsive"],
-    links: { demo: "https://todo-app-yvbb.onrender.com/", source: "https://github.com/indhurakkapan006/todo-app.git" }
+    title: "Ecommerce Project",
+    desc: "E-commerce application with product listings and cart functionality.",
+    tags: ["Ecommerce", "Full Stack"],
+    links: { demo: "https://github.com/indhurakkapan006/Ecommerce-project.git", source: "https://github.com/indhurakkapan006/Ecommerce-project.git" }
+  },
+  {
+    title: "TaskFlow",
+    desc: "Task management / productivity project.",
+    tags: ["Task Management", "React"],
+    links: { demo: "https://github.com/indhurakkapan006/TaskFlow.git", source: "https://github.com/indhurakkapan006/TaskFlow.git" }
   }
 ];
 
 export default function Projects() {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-16 underline decoration-accent underline-offset-8">Featured Projects</h2>
+    <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
+      <h2 className="text-4xl font-bold text-center mb-16 underline decoration-accent underline-offset-8">Projects</h2>
       <div className="grid md:grid-cols-2 gap-8">
         {featuredProjects.map((p, i) => (
           /* 2. Changed <div> to <motion.div> and added animation props */

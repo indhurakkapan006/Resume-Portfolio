@@ -2,36 +2,18 @@ import { Mic, Award } from 'lucide-react';
 import { motion } from 'framer-motion'; // 1. Import motion for animations
 
 const certs = [
-  { 
-    title: "6G Wireless Communication", 
-    sub: "Symposium Presentation", 
-    college: "Erode Sengunthar Engineering College", 
-    icon: <Mic size={18}/> 
-  },
-  { 
-    title: "3D Internet", 
-    sub: "Symposium Presentation", 
-    college: "Annapoorna Engineering College - Sankari", 
-    icon: <Mic size={18}/> 
-  },
-  { 
-    title: "Fuel Delivery System", 
-    sub: "Symposium Presentation", 
-    college: "Inter-college Symposium", 
-    icon: <Mic size={18}/> 
-  },
-  { 
-    title: "IoT Workshops", 
-    sub: "Technical Events & Workshops", 
-    college: "Inter-college Events", 
-    icon: <Award size={18}/> 
+  {
+    title: "Full Stack Development Bootcamp – GUVI (HCL)",
+    sub: "2025",
+    college: "",
+    icon: <Award size={18}/>
   }
 ];
 
 export default function Certifications() {
   return (
     <section className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-16 underline decoration-accent underline-offset-8">Certifications & Achievements</h2>
+      <h2 id="certifications" className="text-4xl font-bold text-center mb-16 underline decoration-accent underline-offset-8">Certifications & Participations</h2>
       <div className="grid md:grid-cols-2 gap-4">
         {certs.map((c, i) => (
           /* 2. Changed <div> to <motion.div> with scroll-trigger props */
