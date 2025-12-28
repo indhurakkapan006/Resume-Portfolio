@@ -2,21 +2,30 @@ import { Layout, Server, Database, Terminal } from 'lucide-react';
 import { motion } from 'framer-motion'; // 1. Import motion
 
 const skillCategories = [
-  { 
-    title: "Frontend", icon: <Layout className="text-accent" />, 
-    items: ["React.js", "HTML", "CSS", "Bootstrap", "JavaScript"] 
+  {
+    title: "Languages",
+    icon: <Layout className="text-accent" />,
+    items: ["JavaScript", "HTML", "CSS"]
   },
-  { 
-    title: "Backend", icon: <Server className="text-accent" />, 
-    items: ["Node.js", "Express.js", "Async Programming"] 
+  {
+    title: "Frontend",
+    icon: <Server className="text-accent" />,
+    items: ["React.js", "Redux", "Responsive Design", "DOM Manipulation"]
   },
-  { 
-    title: "Database", icon: <Database className="text-accent" />, 
-    items: ["SQL Basics", "MongoDB Basics"] 
+  {
+    title: "Backend",
+    icon: <Database className="text-accent" />,
+    items: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication"]
   },
-  { 
-    title: "Tools & Others", icon: <Terminal className="text-accent" />, 
-    items: ["Git/GitHub", "Excel", "VS Code"] 
+  {
+    title: "Databases",
+    icon: <Terminal className="text-accent" />,
+    items: ["MySQL", "MongoDB"]
+  },
+  {
+    title: "Tools & Cloud",
+    icon: <Terminal className="text-accent" />,
+    items: ["Git", "GitHub", "MySQL Workbench", "VS Code", "Postman", "Vercel", "Render"]
   }
 ];
 

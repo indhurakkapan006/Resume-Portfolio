@@ -11,7 +11,7 @@ export default function About() {
       >
         <h2 className="text-4xl font-bold mb-6">About Me</h2>
         <p className="text-gray-400 leading-relaxed text-lg">
-          I am a Full Stack Developer with experience building web applications using React, Node.js, Express, and MongoDB. I enjoy creating performant, accessible user experiences and learning new technologies. Currently pursuing opportunities to contribute to meaningful projects and grow as an engineer.
+          Aspiring Full Stack Developer with expertise in the MERN Stack and SQL. Passionate about building scalable web applications, from real-time messaging platforms to complex e-commerce solutions. Proficient in frontend architecture using React/Redux and backend logic with Node.js and MySQL.
         </p>
       </motion.div>
     </section>

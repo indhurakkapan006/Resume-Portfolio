@@ -5,26 +5,26 @@ const featuredProjects = [
   {
     title: "MERN Chat App",
     desc: "A real-time chat application built with the MERN stack.",
-    tags: ["MERN", "Socket.io"],
-    links: { demo: "https://github.com/indhurakkapan006/mern-chat-app.git", source: "https://github.com/indhurakkapan006/mern-chat-app.git" }
+    tags: ["React.js", "Node.js", "Express", "MySQL"],
+    links: { demo: "https://mern-chat-app-ten-omega.vercel.app", source: "https://github.com/indhurakkapan006/mern-chat-app.git" }
   },
   {
     title: "Fuel Delivery System",
     desc: "Fuel delivery management system with user and admin flows.",
-    tags: ["Full Stack", "Delivery"],
-    links: { demo: "https://github.com/indhurakkapan006/fuel-delivery-system.git", source: "https://github.com/indhurakkapan006/fuel-delivery-system.git" }
+    tags: ["React.js", "Node.js", "Express", "MySQL"],
+    links: { demo: "https://fuel-delivery-system.onrender.com", source: "https://github.com/indhurakkapan006/fuel-delivery-system.git" }
   },
   {
     title: "Ecommerce Project",
     desc: "E-commerce application with product listings and cart functionality.",
-    tags: ["Ecommerce", "Full Stack"],
-    links: { demo: "https://github.com/indhurakkapan006/Ecommerce-project.git", source: "https://github.com/indhurakkapan006/Ecommerce-project.git" }
+    tags: ["React.js", "Redux", "Node.js", "MongoDB"],
+    links: { demo: "https://shop-frontend-glmh.onrender.com", source: "https://github.com/indhurakkapan006/Ecommerce-project.git" }
   },
   {
     title: "TaskFlow",
     desc: "Task management / productivity project.",
-    tags: ["Task Management", "React"],
-    links: { demo: "https://github.com/indhurakkapan006/TaskFlow.git", source: "https://github.com/indhurakkapan006/TaskFlow.git" }
+    tags: ["React.js", "CSS3", "LocalStorage"],
+    links: { demo: "https://task-flow-omega-bay.vercel.app", source: "https://github.com/indhurakkapan006/TaskFlow.git" }
   }
 ];
 
