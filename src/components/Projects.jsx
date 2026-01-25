@@ -12,7 +12,7 @@ const featuredProjects = [
     title: "Fuel Delivery System",
     desc: "Developed a responsive client dashboard for viewing quote history and profile management.",
     tags: ["React.js", "Node.js", "Express", "MySQL"],
-    links: { demo: "https://fuel-delivery-system.onrender.com", source: "https://github.com/indhurakkapan006/fuel-delivery-system.git" }
+    links: { demo: "https://fuel-delivery-frontend.vercel.app", source: "https://github.com/indhurakkapan006/fuel-delivery-web.git" }
   },
   {
     title: "Ecommerce Project",
