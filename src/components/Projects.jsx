@@ -6,7 +6,7 @@ const featuredProjects = [
     title: "MERN Chat App",
     desc: "Architected a bi-directional messaging platform allowing users to join rooms and chat instantly using Socket.io",
     tags: ["React.js", "Node.js", "Express", "MySQL"],
-    links: { demo: "https://mern-chat-app-ten-omega.vercel.app", source: "https://github.com/indhurakkapan006/mern-chat-app.git" }
+    links: { demo: "https://chat-app-one-sage-64.vercel.app", source: "https://github.com/indhurakkapan006/chat-app.git" }
   },
   {
     title: "Fuel Delivery System",
