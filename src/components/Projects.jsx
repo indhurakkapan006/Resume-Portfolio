@@ -4,19 +4,52 @@ import { motion } from 'framer-motion'; // 1. Import motion
 const featuredProjects = [
   {
     title: "MERN Chat App",
-    desc: "Architected a bi-directional messaging platform allowing users to join rooms and chat instantly using Socket.io",
-    tags: ["React.js", "Node.js", "Express", "MySQL"],
+    role: "Full Stack Developer",
+    overview: "Architected a bi-directional messaging platform allowing users to join rooms and chat instantly",
+    challenges: [
+      "Implementing real-time communication with low latency",
+      "Managing concurrent user connections and room state",
+      "Ensuring message persistence and chat history"
+    ],
+    solutions: [
+      "Integrated Socket.io for WebSocket-based bidirectional messaging",
+      "Designed efficient database queries for message retrieval and room management",
+      "Implemented event-driven architecture for real-time updates"
+    ],
+    tags: ["React.js", "Node.js", "Express", "MySQL", "Socket.io"],
     links: { demo: "https://chat-app-one-sage-64.vercel.app", source: "https://github.com/indhurakkapan006/chat-app.git" }
   },
   {
     title: "Fuel Delivery System",
-    desc: "Developed a responsive client dashboard for viewing quote history and profile management.",
+    role: "Full Stack Developer",
+    overview: "Developed a comprehensive platform for fuel delivery with client and admin dashboards",
+    challenges: [
+      "Creating intuitive quote history visualization",
+      "Managing user profile data and delivery preferences",
+      "Integrating location-based services"
+    ],
+    solutions: [
+      "Built responsive React dashboard with data tables and filters",
+      "Implemented secure profile management with validation",
+      "Designed user-friendly interface for quote and order tracking"
+    ],
     tags: ["React.js", "Node.js", "Express", "MySQL"],
     links: { demo: "https://fuel-delivery-frontend.vercel.app", source: "https://github.com/indhurakkapan006/fuel-delivery-web.git" }
   },
   {
     title: "Ecommerce Project",
-    desc: "Developed a RESTful API to handle CRUD operations for inventory management and order processing.",
+    role: "Full Stack Developer",
+    overview: "Built a complete e-commerce platform with inventory management and order processing",
+    challenges: [
+      "Handling complex CRUD operations for multiple entities",
+      "Managing inventory stock levels and order workflows",
+      "Implementing state management across components"
+    ],
+    solutions: [
+      "Developed RESTful API with modular controller and service layers",
+      "Integrated Redux for centralized state management",
+      "Implemented transaction-safe inventory updates and order processing"
+    ],
     tags: ["React.js", "Redux", "Node.js", "MongoDB"],
     links: { demo: "https://shop-frontend-glmh.onrender.com", source: "https://github.com/indhurakkapan006/Ecommerce-project.git" }
   },
@@ -38,8 +71,31 @@ export default function Projects() {
             viewport={{ once: true }} // Only animate once per session
             className="bg-[#111827] p-8 rounded-3xl border border-white/10 hover:border-accent transition-all group"
           >
-            <h3 className="text-2xl font-bold mb-4">{p.title}</h3>
-            <p className="text-gray-400 mb-6 leading-relaxed text-sm">{p.desc}</p>
+            <div className="mb-4">
+              <h3 className="text-2xl font-bold">{p.title}</h3>
+              <p className="text-accent text-sm font-medium mt-1">Role: {p.role}</p>
+            </div>
+            
+            <p className="text-gray-400 mb-6 leading-relaxed text-sm">{p.overview}</p>
+            
+            <div className="mb-6">
+              <h4 className="text-sm font-bold text-white mb-2">Technical Challenges:</h4>
+              <ul className="list-disc list-inside space-y-1">
+                {p.challenges.map((challenge, idx) => (
+                  <li key={idx} className="text-gray-400 text-sm">{challenge}</li>
+                ))}
+              </ul>
+            </div>
+            
+            <div className="mb-6">
+              <h4 className="text-sm font-bold text-white mb-2">Solutions Implemented:</h4>
+              <ul className="list-disc list-inside space-y-1">
+                {p.solutions.map((solution, idx) => (
+                  <li key={idx} className="text-gray-400 text-sm">{solution}</li>
+                ))}
+              </ul>
+            </div>
+            
             <div className="flex flex-wrap gap-2 mb-8">
               {p.tags.map(tag => (
                 <span key={tag} className="text-[10px] uppercase tracking-widest bg-slate-800 px-2 py-1 rounded text-gray-300">{tag}</span>

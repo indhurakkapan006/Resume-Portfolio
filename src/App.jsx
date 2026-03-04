@@ -5,6 +5,8 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import About from './components/About';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 function App() {
@@ -53,7 +55,7 @@ function App() {
           </motion.p>
 
           <div className="mt-8 flex justify-center gap-4 items-center">
-            <a href="/resume.pdf" download className="bg-accent text-dark px-4 py-2 rounded-md font-semibold hover:opacity-90">Download Resume</a>
+            <a href="/resume.pdf" download target="_blank" className="bg-accent text-dark px-4 py-2 rounded-md font-semibold hover:opacity-90">Download Resume</a>
             <div className="flex gap-3 text-gray-400">
               <a href="https://github.com/indhurakkapan006" target="_blank" rel="noreferrer" className="hover:text-accent"> <Github /> </a>
               <a href="https://www.linkedin.com/in/esakkimuthu-neweye/" target="_blank" rel="noreferrer" className="hover:text-accent"> <Linkedin /> </a>
@@ -76,8 +78,10 @@ function App() {
       <About />
 
       {/* These components now handle their own scroll animations internally */}
+      <Experience />
       <DetailedSkills />
       <Projects />
+      <Education />
       <Certifications />
       <Contact />
 
